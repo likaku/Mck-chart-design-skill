@@ -1,24 +1,37 @@
 <p align="center">
-  <img src="assets/logo-placeholder.png" alt="Mck Chart Design" width="120">
+  <img src="assets/logo-placeholder.png" alt="Chart Prompt Generator" width="120">
 </p>
 
-<h1 align="center">📊 Mck Chart Design</h1>
+<h1 align="center">📊 Chart Prompt Generator</h1>
 
 <p align="center">
-  <strong>McKinsey / Financial Times 风格 · AI 图表提示词生成器</strong>
+  <strong>专业编辑型图表风格 · AI 提示词生成器</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-🚧_Alpha_预览版-orange?style=flat-square" alt="Alpha">
+  <img src="https://img.shields.io/badge/version-v0.1--alpha-lightgrey?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/chart_type-折线图-blue?style=flat-square" alt="Line Chart">
 </p>
 
 <p align="center">
   一键生成专业编辑型数据可视化图表的 Midjourney 提示词<br/>
-  让每个打工人都能做出顶级咨询公司水平的图表
+  让每个打工人都能做出专业水准的图表
 </p>
 
 <p align="center">
-  <a href="#-快速开始">快速开始</a> •
   <a href="#-展示画廊">展示画廊</a> •
   <a href="#-加入社群">加入社群</a> •
   <a href="#-路线图">路线图</a>
 </p>
+
+---
+
+> **⚠️ 注意：本项目目前处于 Alpha 早期预览阶段**
+>
+> 当前版本仅支持**折线图**一种图表类型，功能和模板还在持续迭代中。
+> 欢迎 Star 关注进展、加入社群参与讨论，但**暂不建议用于正式生产环境**。
+> 更多图表类型正在路上 👇 [路线图](#-路线图)
 
 ---
 
@@ -28,12 +41,12 @@
 
 - 🤦 汇报的图表被领导吐槽"太丑了"
 - 😩 花 3 小时调 Excel 图表配色，结果还是像 Windows 95
-- 😵 看到麦肯锡/高盛的图表，只能感叹"别人家的图"
+- 😵 看到专业报告里的图表，只能感叹"别人家的图"
 - 🫠 想学数据可视化，但设计规范一大堆，根本记不住
 
-**Mck Chart Design 就是来解决这个问题的。**
+**Chart Prompt Generator 就是来解决这个问题的。**
 
-我们把 McKinsey、Financial Times、The Economist 等顶级机构的图表设计规范，提炼成了一套 **AI 提示词模板系统**。你只需要告诉 AI 你的数据主题，它就能自动生成符合专业标准的 Midjourney 图表提示词。
+我们把专业编辑型数据可视化的图表设计规范（参考顶级财经媒体和咨询公司的风格），提炼成了一套 **AI 提示词模板系统**。你只需要告诉 AI 你的数据主题，它就能自动生成符合专业标准的 Midjourney 图表提示词。
 
 > 🐂🐴 打工人的图表救星 — 从此告别丑图，汇报再也不怕。
 
@@ -43,7 +56,7 @@
 
 | 特性 | 说明 |
 |------|------|
-| 🎨 **专业设计系统** | 基于 FT/Economist 编辑型数据可视化规范，不是随便配的色 |
+| 🎨 **专业设计系统** | 参考顶级财经媒体编辑型数据可视化规范，不是随便配的色 |
 | 🧊 **冷色调色板** | 7 级蓝-青-紫渐变 + 黑色焦点线，拿来就能用 |
 | 📐 **标准化布局** | 16:9 宽屏、直接标签、无网格线、注释驱动叙事 |
 | 🤖 **4 版提示词** | 精细版 / 基础版 / 简洁版 / 中文版，适配不同场景 |
@@ -52,32 +65,24 @@
 
 ---
 
-## 🚀 快速开始
+## 🚀 使用方式（开发中）
 
-### 1. 作为 WorkBuddy / CodeBuddy Skill 使用（推荐）
+> 🚧 **本项目仍在早期开发阶段，以下功能尚未完全开放。**
+> 欢迎 Star 关注，我们会在功能稳定后发布正式版本。
 
-Skill 名称：`Mck-chart-design-skill`
+### 计划中的使用方式
 
-安装后直接对 AI 说：
+**方式一：AI Skill（规划中）**
 
-```
-帮我生成一个关于 [你的数据主题] 的 Midjourney 图表提示词
-```
+作为 AI 编程助手的 Skill 插件，直接对话即可生成图表提示词。
 
-AI 会自动：
-1. 🔍 搜索相关数据趋势
-2. 📋 整理数据背景
-3. 🎨 规划图表设计（配色、焦点线、高亮区域）
-4. ✍️ 生成 4 个版本的 Midjourney 提示词
+**方式二：模板文件**
 
-### 2. 直接使用模板文件
+参考 [`chart-style-template.md`](chart-style-template.md) 中的提示词模板，手动替换占位符后粘贴到 Midjourney。
 
-- **通用模板**：[`chart-style-template.md`](chart-style-template.md) — 填入你的数据即可
-- **示例参考**：[`examples/`](examples/) — 看看别人怎么用的
+**方式三：示例参考**
 
-### 3. 手动使用提示词
-
-复制模板中的提示词，替换 `【】` 中的占位符，粘贴到 Midjourney 即可。
+查看 [`examples/`](examples/) 目录中的完整示例，了解提示词的写法和效果。
 
 ---
 
@@ -179,7 +184,7 @@ AI 会自动：
 ## 📁 项目结构
 
 ```
-mck-chart-design/
+chart-prompt-generator/
 ├── README.md                          # 你在看的这个文件
 ├── chart-style-template.md            # 通用图表风格模板（3 版提示词）
 ├── examples/
@@ -197,9 +202,9 @@ mck-chart-design/
 
 ## 🗺️ 路线图
 
-当前版本 (v0.1) 专注于 **折线图 (Line Chart)** 这一种图表类型。后续版本将逐步扩展更多图形格式：
+当前版本 (v0.1-alpha) 仅包含 **折线图 (Line Chart)** 一种图表类型，更多格式正在开发中：
 
-- [x] 📈 **折线图 (Line Chart)** — 趋势分析、时间序列 ← *当前版本*
+- [x] 📈 **折线图 (Line Chart)** — 趋势分析、时间序列 ← *当前版本 (alpha)*
 - [ ] 📊 **柱状图 (Bar Chart)** — 对比分析、排名展示
 - [ ] 🍩 **环形图 / 饼图 (Donut / Pie Chart)** — 占比分析
 - [ ] 📉 **面积图 (Area Chart)** — 堆叠趋势、份额变化
@@ -261,9 +266,9 @@ mck-chart-design/
 ---
 
 <p align="center">
-  <strong>⭐ 如果这个项目帮到了你，请给个 Star 支持一下！</strong>
+  <strong>⭐ 如果这个项目有潜力，请给个 Star 关注后续进展！</strong>
 </p>
 
 <p align="center">
-  <sub>让每个打工人的汇报图表，都有顶级咨询公司的水准。</sub>
+  <sub>🚧 Alpha 阶段 · 持续开发中 · 让每个打工人的汇报图表都能专业起来</sub>
 </p>
